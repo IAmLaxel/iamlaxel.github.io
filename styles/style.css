@@ -2,12 +2,12 @@
 
 @font-face {
   font-family: 'PixFontBold';
-  src: url('https://iamlaxel.github.io/laxel-site/fonts/LcdSolid-VPzB.ttf') format('truetype');
+  src: url('https://iamlaxel.github.io/fonts/LcdSolid-VPzB.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'PixFontNormal';
-  src: url('https://iamlaxel.github.io/laxel-site/fonts/LcdSolid-VPzB.ttf') format('truetype');
+  src: url('https://iamlaxel.github.io/fonts/LcdSolid-VPzB.ttf') format('truetype');
 }
 
 :root {
