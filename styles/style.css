@@ -2,13 +2,11 @@
 
 @font-face {
   font-family: PixFontBold;
-  src: url(/laxel-site/fonts/LcdSolid-VPzB.ttf) format('truetype');
   src: url(/fonts/LcdSolid-VPzB.ttf) format('truetype');
 }
 
 @font-face {
   font-family: PixFontNormal;
-  src: url(/laxel-site/fonts/LcdSolid-VPzB.ttf) format('truetype');
   src: url(/fonts/LcdSolid-VPzB.ttf) format('truetype');
 }
 
