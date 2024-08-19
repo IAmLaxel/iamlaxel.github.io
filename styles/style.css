@@ -3,13 +3,11 @@
 @font-face {
   font-family: PixFontBold;
   src: url(/fonts/LcdSolid-VPzB.ttf) format('truetype');
-  src: url(fonts/LcdSolid-VPzB.ttf) format('truetype');
 }
 
 @font-face {
   font-family: PixFontNormal;
   src: url(/fonts/LcdSolid-VPzB.ttf) format('truetype');
-  src: url(fonts/LcdSolid-VPzB.ttf) format('truetype');
 }
 
 :root {
@@ -21,8 +19,8 @@
   --black-color: rgba(0, 0, 0, 0.1);
   --harsh-black-color: rgba(0, 0, 0, 0.6);
   --harsh-white-color: rgba(246, 246, 246, 1);
-  --default-font: "PixFontNormal", sans-serif;
-  --default-font-shaded: "PixFontBold", sans-serif;
+  --default-font: "PixFontNormal", monospace;
+  --default-font-shaded: "PixFontBold", monospace;
   --default-border-width: 0.4rem;
   --drop-shadow: drop-shadow(0 0 0.75rem var(--black-color));
   --drop-shadow-harsh: drop-shadow(0 4px 0 var(--harsh-black-color));
