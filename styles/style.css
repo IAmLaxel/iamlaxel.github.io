@@ -1,13 +1,15 @@
 @import url("https://fonts.cdnfonts.com/css/square-dance");
 
 @font-face {
-  font-family: 'PixFontBold';
-  src: url('https://iamlaxel.github.io/fonts/LcdSolid-VPzB.ttf') format('truetype');
+  font-family: "PixFontBold";
+  src: url("https://iamlaxel.github.io/fonts/LcdSolid-VPzB.ttf")
+    format("truetype");
 }
 
 @font-face {
-  font-family: 'PixFontNormal';
-  src: url('https://iamlaxel.github.io/fonts/LcdSolid-VPzB.ttf') format('truetype');
+  font-family: "PixFontNormal";
+  src: url("https://iamlaxel.github.io/fonts/LcdSolid-VPzB.ttf")
+    format("truetype");
 }
 
 :root {
@@ -42,14 +44,17 @@ html {
 
 header {
   color: white;
+  height: 6rem;
   padding: 0 1rem;
   margin: 0 auto;
   max-width: calc(100% - 2rem);
+  transition: var(--all-transition-short);
   z-index: 4;
 }
 
 header.active {
   color: black;
+  height: 4rem;
   background-color: var(--orange-color);
   filter: var(--drop-shadow-harsh-w);
 }
@@ -307,12 +312,6 @@ p {
   scroll-snap-type: proximity;
 }
 
-.vid-frame {
-  width: 100%;
-
-  overflow: auto;
-}
-
 .wrap {
   flex-wrap: wrap;
 }
@@ -322,4 +321,64 @@ p {
   height: 2px;
   margin-top: 4rem;
   width: 80%;
+}
+
+.full-flex {
+  flex-grow: 0;
+  flex-shrink: 0;
+  width: 100%;
+}
+
+.toggle-button {
+  cursor: pointer;
+  width: 1.4rem;
+  height: 1.4rem;
+  rotate: 0deg;
+  outline: none;
+  border-radius: 0;
+  background-color: white;
+  transition: var(--all-transition-short);
+}
+
+.toggle-button.open {
+  rotate: 90deg;
+}
+
+.video-container {
+  overflow: hidden;
+  max-height: 100rem;
+  transform: scaleY(1);
+  transform-origin: bottom;
+  transition: max-height 0.3s ease, transform 0.3s ease;
+}
+
+.video-container.hidden {
+  max-height: 0;
+  transform: scaleY(0);
+  background-color: white;
+}
+
+.white {
+  color: var(--white-color);
+}
+
+.pop-up {
+  position: absolute;
+  top: 0;
+  background-color: var(--harsh-black-color);
+}
+
+.icon {
+  width: 2rem;
+  height: 2rem;
+  scale: 1;
+  transition: var(--all-transition-short);
+}
+
+.icon:hover {
+  scale: 1.2;
+}
+
+footer {
+  padding: 1rem;
 }
